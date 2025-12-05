@@ -1,6 +1,7 @@
 Huffman Coding Implementation
 
-[Your Name]
+[Prince Adjei]
+California State University San Marcos
 CS 201 - Data Structures
 Fall 2025
 
