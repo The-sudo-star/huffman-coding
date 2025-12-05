@@ -1,0 +1,12 @@
+hey this is just a test file for my huffman coding project
+
+so basically im testing if this compression thing actually works lol
+professor said we could do this for extra credit and i figured why not
+
+lets see if it compresses this text... hoping for at least SOME compression
+im writing random stuff here to make the file longer
+
+the more i write the better the compression should be i think?
+repeated letters should help: eeeeeeeeee tttttttt aaaaaaa
+
+ok thats probably enough for a small test file

@@ -1,0 +1,51 @@
+Huffman Coding Project Notes
+
+Ok so I'm trying to implement huffman coding for my data structures class. It's for extra credit but I need the points lol.
+
+What I learned so far:
+- Huffman coding uses a binary tree
+- You count how often each letter appears
+- Common letters get short codes, rare letters get long codes
+- Its supposed to compress files
+
+How it works (my understanding):
+1. Count all the letters in your text
+2. Make a tree where common letters are near the top
+3. Give each letter a code made of 0s and 1s
+4. Replace all letters with their codes
+5. To decompress, just go backwards through the tree
+
+I used Python because its easier than C++ and the professor said we could use any language. I'm using heapq for the priority queue part because I'm not trying to implement that from scratch.
+
+The algorithm is pretty cool actually. Like if you have the text "hello" then:
+- h appears 1 time
+- e appears 1 time  
+- l appears 2 times
+- o appears 1 time
+
+So l should get a shorter code than the other letters.
+
+Testing results:
+- Small files don't compress well (the tree data is too big)
+- Need to test on larger files to see if it works better
+
+Issues I ran into:
+- Had to handle the case where there's only 1 unique character
+- Pickle was easier than trying to write my own file format
+- Decoding was tricky at first but then I got it
+
+Overall this was harder than I thought but I think I got it working. Hopefully this is good enough for the extra credit!
+
+Sources I used:
+- Wikipedia page on Huffman coding
+- GeeksforGeeks tutorial
+- Stack Overflow when I got stuck lol
+- Our textbook (Introduction to Algorithms)
+
+Random text to make this file bigger and test compression:
+The quick brown fox jumps over the lazy dog. This sentence has every letter of the alphabet. I wonder if that affects compression? Probably not that much since each letter still only appears once or twice.
+
+More test text: aaaaaaaaaa bbbbbbbb ccccccc ddddddd eeeeeeee
+This should compress really well because of all the repeated characters.
+
+Ok I think this is long enough for a medium sized test file. Time to actually test if this works!
