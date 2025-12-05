@@ -24,6 +24,18 @@ B. Algorithm
 
 Overall time complexity: O(n + k log k) where n = text length, k = unique characters
 
+C. Visual Example
+
+Tree for text "BEEP" (Frequencies: B:1, P:1, E:2):
+
+        [4]
+       /   \
+     [E:2] [2]
+           / \
+        [B:1][P:1]
+
+Resulting Codes: E=0, B=10, P=11
+
 III. RESULTS
 
 Tested on three files with actual compression results:
